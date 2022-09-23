@@ -14,5 +14,6 @@ document.body.onload = () => {
 const $submitBtn = document.querySelector('.submitBtn')
 $submitBtn.onclick = (e) => {
     e.preventDefault()
-}
 
+    window.open('https://github.com/renardbergson')
+}

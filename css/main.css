@@ -50,7 +50,7 @@ body .container {
   top: 50%;
   left: 50%;
   width: 380px;
-  height: 420px;
+  height: 500px;
   background-color: #1c1c1c;
   border-radius: 10px;
   transform: translate(-50%, -50%);
@@ -64,7 +64,7 @@ body .container::before {
   top: -50%;
   left: -50%;
   width: 380px;
-  height: 420px;
+  height: 500px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
   -webkit-animation: animatedBorder 10000ms linear infinite, borderOpacity 5000ms linear 1;
           animation: animatedBorder 10000ms linear infinite, borderOpacity 5000ms linear 1;
@@ -76,7 +76,7 @@ body .container::after {
   top: -50%;
   left: -50%;
   width: 380px;
-  height: 420px;
+  height: 500px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
   -webkit-animation: animatedBorder 10000ms linear infinite, borderOpacity 5000ms linear 1;
           animation: animatedBorder 10000ms linear infinite, borderOpacity 5000ms linear 1;
@@ -85,25 +85,27 @@ body .container::after {
 }
 body .container .subscriptionForm {
   position: absolute;
-  inset: 1px;
+  inset: 2px;
   background-color: #28292d;
   border-radius: 10px;
   z-index: 1;
   padding: 40px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 body .container .subscriptionForm h2 {
   color: #45f3ff;
   font-size: 1.7em;
   text-align: center;
   letter-spacing: 0.1em;
+  margin-bottom: 30px;
 }
 body .container .subscriptionForm h2 span {
   letter-spacing: 0.2em;
   font-size: 0.4em;
   position: absolute;
-  top: 18%;
+  top: 20%;
   right: 16%;
 }
 body .container .subscriptionForm .inputBox {
