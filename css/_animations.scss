@@ -7,3 +7,13 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes borderOpacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
