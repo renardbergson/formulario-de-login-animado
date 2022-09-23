@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-@-webkit-keyframes border {
+@-webkit-keyframes animatedBorder {
   from {
     transform: rotate(0deg);
   }
@@ -14,7 +15,7 @@
   }
 }
 
-@keyframes border {
+@keyframes animatedBorder {
   from {
     transform: rotate(0deg);
   }
@@ -46,8 +47,8 @@ body .container::before {
   width: 380px;
   height: 420px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
-  -webkit-animation: border 6000ms linear infinite;
-          animation: border 6000ms linear infinite;
+  -webkit-animation: animatedBorder 8000ms linear infinite;
+          animation: animatedBorder 8000ms linear infinite;
   transform-origin: bottom right;
 }
 body .container::after {
@@ -58,9 +59,16 @@ body .container::after {
   width: 380px;
   height: 420px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
-  -webkit-animation: border 6000ms linear infinite;
-          animation: border 6000ms linear infinite;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
+  -webkit-animation: animatedBorder 8000ms linear infinite;
+          animation: animatedBorder 8000ms linear infinite;
+  -webkit-animation-delay: 4000ms;
+          animation-delay: 4000ms;
   transform-origin: bottom right;
+}
+body .container .subscriptionForm {
+  position: absolute;
+  inset: 2px;
+  background-color: #28292d;
+  border-radius: 10px;
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */
