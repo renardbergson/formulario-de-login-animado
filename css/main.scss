@@ -5,6 +5,7 @@ body {
     height: 100vh;
     width: 100%;
     background-color: #23242a;
+    font-size: 1em;
 
     .container {
         position: absolute;
@@ -48,6 +49,67 @@ body {
             background-color: #28292d;
             border-radius: 10px;
             z-index: 1;
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                color: #45f3ff;
+                font-size: 1.5em;
+                text-align: center;
+                letter-spacing: 0.1em;
+            }
+
+            .inputBox {
+                margin-top: 30px;
+                position: relative; // posicionar os filhos relativos a ele
+
+                input {
+                    width: 100%;
+                    padding: 20px 10px;
+                    outline: none;
+                    background: transparent;
+                    border: none;
+                    //color: #23242a;
+                    font-size: 1em;
+                    letter-spacing: 0.05em;
+
+                    &:focus ~ span,
+                    &:valid ~ span {
+                        color: #45f3ff;
+                        transform: translateX(-10px) translateY(-30px);
+                        font-size: 0.75em;
+                    }
+
+                    &:focus ~ div,
+                    &:valid ~ div {
+                        height: 35px;
+                    }
+                }
+                
+                span {
+                    padding: 20px 10px;
+                    position: absolute; // torna um relemento relativo ao body ou ao elemento mais próximo com position = relative
+                    left: 0;
+                    font-size: 1em;
+                    color: #8f8f8f;
+                    pointer-events: none;
+                    letter-spacing: 0.05em;
+                    transition: 500ms;
+                }
+
+                div {
+                    height: 2px;
+                    width: 100%;
+                    background: #45f3ff;
+                    pointer-events: none;
+                    position: absolute;
+                    bottom: 17px;
+                    transition: 500ms;
+                    border-radius: 5px;
+                    z-index: -1;
+                }
+            }
         }
     }
 }

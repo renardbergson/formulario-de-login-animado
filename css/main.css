@@ -27,6 +27,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #23242a;
+  font-size: 1em;
 }
 body .container {
   position: absolute;
@@ -71,4 +72,55 @@ body .container .subscriptionForm {
   background-color: #28292d;
   border-radius: 10px;
   z-index: 1;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+body .container .subscriptionForm h2 {
+  color: #45f3ff;
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+body .container .subscriptionForm .inputBox {
+  margin-top: 30px;
+  position: relative;
+}
+body .container .subscriptionForm .inputBox input {
+  width: 100%;
+  padding: 20px 10px;
+  outline: none;
+  background: transparent;
+  border: none;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+body .container .subscriptionForm .inputBox input:focus ~ span, body .container .subscriptionForm .inputBox input:valid ~ span {
+  color: #45f3ff;
+  transform: translateX(-10px) translateY(-30px);
+  font-size: 0.75em;
+}
+body .container .subscriptionForm .inputBox input:focus ~ div, body .container .subscriptionForm .inputBox input:valid ~ div {
+  height: 35px;
+}
+body .container .subscriptionForm .inputBox span {
+  padding: 20px 10px;
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+  color: #8f8f8f;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  transition: 500ms;
+}
+body .container .subscriptionForm .inputBox div {
+  height: 2px;
+  width: 100%;
+  background: #45f3ff;
+  pointer-events: none;
+  position: absolute;
+  bottom: 17px;
+  transition: 500ms;
+  border-radius: 5px;
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */
