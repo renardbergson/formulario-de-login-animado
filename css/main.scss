@@ -66,7 +66,7 @@ body {
 
                 input {
                     width: 100%;
-                    padding: 20px 10px;
+                    padding: 22px 10px;
                     outline: none;
                     background: transparent;
                     border: none;
@@ -77,7 +77,7 @@ body {
                     &:focus ~ span,
                     &:valid ~ span {
                         color: #45f3ff;
-                        transform: translateX(-10px) translateY(-30px);
+                        transform: translateY(-30px);
                         font-size: 0.75em;
                     }
 
@@ -88,7 +88,7 @@ body {
                 }
                 
                 span {
-                    padding: 20px 10px;
+                    padding: 20px 0;
                     position: absolute; // torna um relemento relativo ao body ou ao elemento mais próximo com position = relative
                     left: 0;
                     font-size: 1em;
@@ -109,6 +109,38 @@ body {
                     border-radius: 5px;
                     z-index: -1;
                 }
+            }
+
+            .links {
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    margin: 10px 0;
+                    font-size: 0.75em;
+                    color: #8f8f8f;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #45f3ff;
+                    }
+
+                    &:nth-child(2) {
+                        color: #45f3ff;
+                    }
+                }
+            }
+
+            .submitBtn {
+                border: none;
+                outline: none;
+                background: #45f3ff;
+                padding: 12px 25px;
+                border-radius: 5px;
+                width: fit-content;
+                margin-top: 10px;
+                cursor: pointer;
+                font-weight: bold;
             }
         }
     }
