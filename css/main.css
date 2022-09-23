@@ -1,1 +1,22 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #23242a;
+}
+body .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 380px;
+  height: 420px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=main.css.map */
