@@ -5,9 +5,23 @@
 
 body {
     height: 100vh;
-    width: 100%;
+    height: calc(100vh - calc(100vh - 100%));
     background-color: $body-background;
     font-size: 1em;
+
+    @include devices (mobileL) {
+        font-size: 0.9em;
+        //background-color: rgba(29, 157, 59, 0.498);
+    }
+    @include devices (mobileM) {
+        font-size: 0.8em;
+        //background-color: rgb(83, 140, 158);
+    }
+    @include devices (mobileS) {
+        font-size: 0.7em;
+        //background-color: rgba(155, 12, 12, 0.617);
+    }
+
 
     .container {
         position: absolute;
@@ -22,6 +36,19 @@ body {
         opacity: 0.9;
         box-shadow: 0px 0px 10px $container-border-and-shadow;
 
+        @include devices (mobileL) {
+            width: 310px;
+            height: 480px;
+        }
+        @include devices (mobileM) {
+            width: 280px;
+            height: 460px;
+        }
+        @include devices (mobileS) {
+            width: 230px;
+            height: 440px;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -30,11 +57,25 @@ body {
             width: 380px;
             height: 500px;
             background: linear-gradient(0deg, transparent, $main-light-color, $main-light-color);
-            animation: animatedBorder 10000ms linear infinite, borderOpacity 5000ms linear 1;
+            animation: animatedBorder 10000ms linear infinite, borderOpacity 5000ms linear 1 normal;
             transform-origin: bottom right;
+            z-index: 1;
+
+            @include devices (mobileL) {
+                width: 310px;
+                height: 480px;
+            }
+            @include devices (mobileM) {
+                width: 280px;
+                height: 460px;
+            }
+            @include devices (mobileS) {
+                width: 230px;
+                height: 440px;
+            }
         }
 
-        &::after {
+         &::after {
             content: '';
             position: absolute;
             top: -50%;
@@ -42,21 +83,46 @@ body {
             width: 380px;
             height: 500px;
             background: linear-gradient(0deg, transparent, $main-light-color, $main-light-color);
-            animation: animatedBorder 10000ms linear infinite, borderOpacity 5000ms linear 1;
+            animation: animatedBorder 10000ms linear infinite, borderOpacity 1000ms linear 1 normal;
             transform-origin: bottom right;
             display: var(--display); // declare a variable to handle the pseudo-element via JS
-        }
+            z-index: 2; 
+
+             @include devices (mobileL) {
+                width: 310px;
+                height: 480px;
+                animation: borderOpacity 2000ms linear 4900ms, animatedBorder 10000ms linear 5000ms infinite;
+            }
+            @include devices (mobileM) {
+                width: 280px;
+                height: 460px;
+            }
+            @include devices (mobileS) {
+                width: 230px;
+                height: 440px;
+            }
+        } 
 
         .subscriptionForm {
             position: absolute;
             inset: 2px;
             background-color: $form-background;
             border-radius: 10px;
-            z-index: 1;
+            z-index: 3;
             padding: 40px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @include devices (mobileL) {
+                padding: 30px;
+            }
+            @include devices (mobileM) {
+                padding: 20px;
+            }
+            @include devices (mobileS) {
+                padding: 10px;
+            }
 
             h2 {
                 color: $main-light-color;
@@ -65,12 +131,29 @@ body {
                 letter-spacing: 0.1em;
                 margin-bottom: 30px;
 
+                @include devices (mobileM) {
+                    font-size: 1.6em;
+                }
+
                 span {
                     letter-spacing: 0.2em;
                     font-size: 0.4em;
                     position: absolute;
                     top: 20%;
-                    right: 16%;
+                    right: 17.3%;
+
+                    @include devices (mobileL) {
+                        top: 19.5%;
+                        right: 14%;
+                    }
+                    @include devices (mobileM) {
+                        top: 19%;
+                        right: 16.5%;
+                    }
+                    @include devices (mobileS) {
+                        top: 18.1%;
+                        right: 14%;
+                    }
                 }
             }
 
@@ -90,7 +173,7 @@ body {
                     &:focus ~ span,
                     &:valid ~ span {
                         color: $main-light-color;
-                        transform: translateY(-30px);
+                        transform: translateY(-35px);
                         font-size: 0.75em;
                     }
 
@@ -104,7 +187,8 @@ body {
                     padding: 20px 0;
                     position: absolute; // torna um relemento relativo ao body ou ao elemento mais próximo com position = relative
                     left: 0;
-                    font-size: 1em;
+                    bottom: 0;
+                    font-size: 0.9em;
                     color: $label-text-color;
                     pointer-events: none;
                     letter-spacing: 0.05em;
@@ -154,9 +238,20 @@ body {
                 margin-top: 10px;
                 cursor: pointer;
                 font-weight: bold;
+                font-size: 0.85em;
 
                 &:hover {
                     opacity: 0.9;
+                }
+
+                @include devices (mobileL) {
+                    font-size: 0.80em;
+                }
+                @include devices (mobileM) {
+                    font-size: 0.75em;
+                }
+                @include devices (mobileS) {
+                    font-size: 0.70em;
                 }
             }
         }

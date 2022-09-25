@@ -1,0 +1,21 @@
+@mixin devices ($breakpoint) {
+
+    @if $breakpoint == mobileL {
+        @media (max-width: 425px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == mobileM {
+        @media (max-width: 375px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == mobileS {
+        @media (max-width: 320px) {
+            @content
+        }
+    }
+
+}
