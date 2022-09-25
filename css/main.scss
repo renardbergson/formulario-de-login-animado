@@ -239,6 +239,7 @@ body {
                 cursor: pointer;
                 font-weight: bold;
                 font-size: 0.85em;
+                color: $container-border-and-shadow;
 
                 &:hover {
                     opacity: 0.9;

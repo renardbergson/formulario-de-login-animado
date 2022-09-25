@@ -291,6 +291,7 @@ body .container .subscriptionForm .submitBtn {
   cursor: pointer;
   font-weight: bold;
   font-size: 0.85em;
+  color: #1c1c1c;
 }
 body .container .subscriptionForm .submitBtn:hover {
   opacity: 0.9;
