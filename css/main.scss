@@ -11,14 +11,17 @@ body {
 
     @include devices (mobileL) {
         font-size: 0.9em;
+        touch-action: none;
         //background-color: rgba(29, 157, 59, 0.498);
     }
     @include devices (mobileM) {
         font-size: 0.8em;
+        touch-action: none;
         //background-color: rgb(83, 140, 158);
     }
     @include devices (mobileS) {
         font-size: 0.7em;
+        touch-action: none;
         //background-color: rgba(155, 12, 12, 0.617);
     }
 
