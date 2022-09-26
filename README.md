@@ -1,35 +1,35 @@
 # Formulário de Login Animado
 
 ### Descrição
-Este é um projeto que contém animações CSS como seu diferencial, que utiliza cores sutis e possui um design responsivo. Ele foi desenvolvido em aproximadamente três dias.
+Este projeto é uma página de login que contém animações CSS e efeitos que ocorrem quando o usuário foca nos campos de entrada de dados. Seu design possui cores sutis e também conta com responsividade. A aplicação foi desenvolvida em aproximadamente três dias.
 
 ### Objetivos
-Meu objetivo inicial era descobrir a maneira de implementar a sua proposta visual, no que diz respeito às animações, além disso, colocar em prática o uso de media queries, através de Mixins.
+Meu objetivo inicial era descobrir como implementar a sua proposta visual, no que diz respeito às animações, além disso, colocar em prática o uso de media queries, através de <i>Mixins</i>.
 
 ### O que aprendi
-<div style="margin-left: 20px;">
+<dl>
 
-#### HTML
-<div style="margin-left: 20px;">
+#### 📌 HTML
+<dd>
   •	Usar os parâmetros <i>maximum-scale</i> e <i>viewport-fit=cover</i> na tag HTML Viewport, a fim de corrigir o zoom-in automático, ao alternar entre o modo retrato e paisagem no aparelho mobile <br>
-</div> <br>
+</dd>
 
-#### CSS
-<div style="margin-left: 20px;">
+#### 📌 CSS
+<dd>
   •	A função da propriedade <i>inset</i> <br>
   •	A função da propriedade <i>z-index</i> <br>
   •	A função da propriedade <i>pointer-events</i> <br>
   •	A função do pseudo seletor <i>:focus</i> <br>
   •	A função do pseudo seletor <i>:valid</i> <br>
   •	Implementar media queries através de <i>Mixins</i> <br>
-</div> <br>
+</dd>
 
-#### JavaScript
-<div style="margin-left: 20px;">
+#### 📌 JavaScript
+<dd>
   •	Manipular pseudo-elementos via JS, através da criação de variáveis no código CSS<br>
-</div>
+</dd>
 
-</div> <br>
+</dl>
   
 ### Principais desafios encontrados
   •	Implementar o design responsivo usando Mixins <br>
@@ -49,11 +49,12 @@ Meu objetivo inicial era descobrir a maneira de implementar a sua proposta visua
   •	Um navegador em ambiente desktop ou mobile
   
 ### Preview
-Este é um pequeno preview do projeto <br>
-![]() 
+Confira o video preview do projeto <br>
+
+https://user-images.githubusercontent.com/97261795/192344380-953a6f69-dd42-46fe-82c3-d1671442b903.mov
 
 ### Link
-  •	[Formulário de Login Animado](renardbergson.github.io/formulario-de-login-animado/) 
+  •	[Formulário de Login Animado](https://renardbergson.github.io/formulario-de-login-animado) 
 
 ### Autor
   •	Renard Bergson 🤓 <br>
