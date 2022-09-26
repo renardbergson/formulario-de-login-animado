@@ -1,0 +1,21 @@
+- We can use the CSS property called INSET which corresponds to 
+top, right, bottom and left position properties
+
+- The z-index property specifies the stack order of an element
+
+- The pointer-events property defines whether or not an element reacts to pointer events
+
+- The :focus pseudo selector styles an input field when it gets focused
+
+- The :valid pseudo selector styles an input field if there is any text in it (needs the "required"
+attribute in HTML). This pseudo selector also allows us to see if any text matches
+the format we want (in this case it requires the "value" attribute in HTML)
+
+- We can handle CSS pseudo elements by JS using the setProperty method. First of all, we set a variable
+in any CSS property value and then we modify them, calling the real element in JS
+
+- It's possible to improve the user zoom experience, using "maximum-scale" and "viewport-fit=cover" 
+in the HTML viewport tag
+
+- It's very useful to define media queries using sass mixins, which allows us to have cleaner code 
+and make it more professional

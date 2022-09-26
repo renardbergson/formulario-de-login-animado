@@ -220,14 +220,14 @@ body {
                     }
                     @include devices (iphone_11_12_13_Landscape) {
                         top: 15%;
-                        right: 31.5%;
+                        right: 30%;
                     }
                     @include devices (iphone_SE2_Landscape) {
-                        right: 26.5%;
+                        right: 25%;
                     }
                     @include devices (galaxyZFold_Landscape) {
-                        top: 12.5%;
-                        right: 29%;
+                        top: 13%;
+                        right: 28.5%;
                     }
                     // ************************************************************************
                 }
@@ -235,7 +235,7 @@ body {
 
             .inputBox {
                 margin-top: 30px;
-                position: relative; // posicionar os filhos relativos a ele
+                position: relative; 
                 
                 // **************************** MEDIA QUERIES ****************************
                 @include devices (galaxyZFold_Landscape) {
@@ -308,7 +308,7 @@ body {
                 
                 span {
                     padding: 20px 0;
-                    position: absolute; // torna um elemento relativo ao body ou ao elemento mais próximo com position = relative
+                    position: absolute; 
                     left: 0;
                     bottom: 0;
                     font-size: 0.9em;
