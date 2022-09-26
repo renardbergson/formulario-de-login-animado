@@ -3,8 +3,8 @@ document.body.onload = () => {
     $container.style.setProperty('--display', 'none') // use setProperty method to call the CCS variable
 
     setTimeout(() => {
-        const $container = document.querySelector('.container')
         $container.style.setProperty('--display', 'block')
+        $container.style.setProperty('--animation', 'animatedBorder 10000ms linear infinite, borderOpacity 2000ms') 
     }, 5000)
 
     document.forms['subscriptionForm']['username'].value = ''

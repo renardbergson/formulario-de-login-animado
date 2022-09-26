@@ -41,26 +41,40 @@
 }
 body {
   height: 100vh;
-  height: calc(100vh - (100vh - 100%));
+  height: 100%;
   background-color: #23242a;
   font-size: 1em;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
 }
 @media (max-width: 425px) {
   body {
     font-size: 0.9em;
-    touch-action: none;
   }
 }
 @media (max-width: 375px) {
   body {
     font-size: 0.8em;
-    touch-action: none;
   }
 }
 @media (max-width: 320px) {
   body {
     font-size: 0.7em;
-    touch-action: none;
+  }
+}
+@media (max-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  body {
+    font-size: 0.7em;
   }
 }
 body .container {
@@ -75,6 +89,18 @@ body .container {
   overflow: hidden;
   opacity: 0.9;
   box-shadow: 0px 0px 10px #1c1c1c;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
 }
 @media (max-width: 425px) {
   body .container {
@@ -92,6 +118,22 @@ body .container {
   body .container {
     width: 230px;
     height: 440px;
+  }
+}
+@media (max-width: 926px) and (max-height: 428px) and (orientation: landscape) {
+  body .container {
+    width: 700px;
+    height: 300px;
+  }
+}
+@media (max-width: 667px) and (max-height: 375px) and (orientation: landscape) {
+  body .container {
+    width: 550px;
+  }
+}
+@media (max-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  body .container {
+    height: 220px;
   }
 }
 body .container::before {
@@ -102,10 +144,22 @@ body .container::before {
   width: 380px;
   height: 500px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
-  -webkit-animation: animatedBorder 10000ms linear infinite, borderOpacity 5000ms linear 1 normal;
-          animation: animatedBorder 10000ms linear infinite, borderOpacity 5000ms linear 1 normal;
+  -webkit-animation: animatedBorder 10000ms linear infinite, borderOpacity 2000ms linear 1 normal;
+          animation: animatedBorder 10000ms linear infinite, borderOpacity 2000ms linear 1 normal;
   transform-origin: bottom right;
   z-index: 1;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
 }
 @media (max-width: 425px) {
   body .container::before {
@@ -123,6 +177,30 @@ body .container::before {
   body .container::before {
     width: 230px;
     height: 440px;
+  }
+}
+@media (max-width: 926px) and (max-height: 428px) and (orientation: landscape) {
+  body .container::before {
+    width: 400px;
+    height: 100px;
+    top: 20%;
+    left: -6%;
+  }
+}
+@media (max-width: 667px) and (max-height: 375px) and (orientation: landscape) {
+  body .container::before {
+    width: 350px;
+    height: 100px;
+    top: 20%;
+    left: -13%;
+  }
+}
+@media (max-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  body .container::before {
+    width: 300px;
+    height: 100px;
+    top: 5%;
+    left: -3%;
   }
 }
 body .container::after {
@@ -133,18 +211,28 @@ body .container::after {
   width: 380px;
   height: 500px;
   background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
-  -webkit-animation: animatedBorder 10000ms linear infinite, borderOpacity 1000ms linear 1 normal;
-          animation: animatedBorder 10000ms linear infinite, borderOpacity 1000ms linear 1 normal;
+  -webkit-animation: var(--animation);
+          animation: var(--animation);
   transform-origin: bottom right;
   display: var(--display);
   z-index: 2;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
 }
 @media (max-width: 425px) {
   body .container::after {
     width: 310px;
     height: 480px;
-    -webkit-animation: borderOpacity 2000ms linear 4900ms, animatedBorder 10000ms linear 5000ms infinite;
-            animation: borderOpacity 2000ms linear 4900ms, animatedBorder 10000ms linear 5000ms infinite;
   }
 }
 @media (max-width: 375px) {
@@ -157,6 +245,30 @@ body .container::after {
   body .container::after {
     width: 230px;
     height: 440px;
+  }
+}
+@media (max-width: 926px) and (max-height: 428px) and (orientation: landscape) {
+  body .container::after {
+    width: 400px;
+    height: 100px;
+    top: 20%;
+    left: -6%;
+  }
+}
+@media (max-width: 667px) and (max-height: 375px) and (orientation: landscape) {
+  body .container::after {
+    width: 350px;
+    height: 100px;
+    top: 20%;
+    left: -13%;
+  }
+}
+@media (max-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  body .container::after {
+    width: 300px;
+    height: 100px;
+    top: 5%;
+    left: -3%;
   }
 }
 body .container .subscriptionForm {
@@ -169,6 +281,12 @@ body .container .subscriptionForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
 }
 @media (max-width: 425px) {
   body .container .subscriptionForm {
@@ -191,10 +309,19 @@ body .container .subscriptionForm h2 {
   text-align: center;
   letter-spacing: 0.1em;
   margin-bottom: 30px;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
 }
 @media (max-width: 375px) {
   body .container .subscriptionForm h2 {
     font-size: 1.6em;
+  }
+}
+@media (max-width: 926px) and (max-height: 428px) and (orientation: landscape) {
+  body .container .subscriptionForm h2 {
+    margin-bottom: 0;
   }
 }
 body .container .subscriptionForm h2 span {
@@ -202,29 +329,82 @@ body .container .subscriptionForm h2 span {
   font-size: 0.4em;
   position: absolute;
   top: 20%;
-  right: 17.3%;
+  right: 16.3%;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
 }
 @media (max-width: 425px) {
   body .container .subscriptionForm h2 span {
-    top: 19.5%;
-    right: 14%;
+    top: 19%;
+    right: 12.8%;
   }
 }
 @media (max-width: 375px) {
   body .container .subscriptionForm h2 span {
-    top: 19%;
-    right: 16.5%;
+    top: 18%;
+    right: 15.4%;
   }
 }
 @media (max-width: 320px) {
   body .container .subscriptionForm h2 span {
-    top: 18.1%;
-    right: 14%;
+    top: 16.5%;
+    right: 12%;
+  }
+}
+@media (max-width: 926px) and (max-height: 428px) and (orientation: landscape) {
+  body .container .subscriptionForm h2 span {
+    top: 15%;
+    right: 31.5%;
+  }
+}
+@media (max-width: 667px) and (max-height: 375px) and (orientation: landscape) {
+  body .container .subscriptionForm h2 span {
+    right: 26.5%;
+  }
+}
+@media (max-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  body .container .subscriptionForm h2 span {
+    top: 12.5%;
+    right: 29%;
   }
 }
 body .container .subscriptionForm .inputBox {
   margin-top: 30px;
   position: relative;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+}
+@media (max-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  body .container .subscriptionForm .inputBox {
+    margin-top: 20px;
+  }
+}
+body .container .subscriptionForm .inputBox:last-of-type {
+  margin-top: 10px;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+}
+@media (max-width: 926px) and (max-height: 428px) and (orientation: landscape) {
+  body .container .subscriptionForm .inputBox:last-of-type {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  body .container .subscriptionForm .inputBox:last-of-type {
+    margin-top: 10px;
+  }
 }
 body .container .subscriptionForm .inputBox input {
   width: 100%;
@@ -234,14 +414,57 @@ body .container .subscriptionForm .inputBox input {
   border: none;
   font-size: 1em;
   letter-spacing: 0.05em;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+}
+@media (max-width: 425px) {
+  body .container .subscriptionForm .inputBox input {
+    padding: 23px 10px;
+  }
+}
+@media (max-width: 375px) {
+  body .container .subscriptionForm .inputBox input {
+    padding: 24px 10px;
+  }
+}
+@media (max-width: 320px) {
+  body .container .subscriptionForm .inputBox input {
+    padding: 25px 10px;
+  }
+}
+@media (max-width: 926px) and (max-height: 428px) and (orientation: landscape) {
+  body .container .subscriptionForm .inputBox input {
+    padding: 0 10px;
+    margin-bottom: 22px;
+  }
 }
 body .container .subscriptionForm .inputBox input:focus ~ span, body .container .subscriptionForm .inputBox input:valid ~ span {
   color: #45f3ff;
   transform: translateY(-35px);
   font-size: 0.75em;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+}
+@media (max-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  body .container .subscriptionForm .inputBox input:focus ~ span, body .container .subscriptionForm .inputBox input:valid ~ span {
+    transform: translateY(-25px);
+  }
 }
 body .container .subscriptionForm .inputBox input:focus ~ div, body .container .subscriptionForm .inputBox input:valid ~ div {
   height: 35px;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+}
+@media (max-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  body .container .subscriptionForm .inputBox input:focus ~ div, body .container .subscriptionForm .inputBox input:valid ~ div {
+    height: 25px;
+  }
 }
 body .container .subscriptionForm .inputBox span {
   padding: 20px 0;
@@ -268,12 +491,27 @@ body .container .subscriptionForm .inputBox div {
 body .container .subscriptionForm .links {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+}
+@media (max-width: 926px) and (max-height: 428px) and (orientation: landscape) {
+  body .container .subscriptionForm .links {
+    margin-top: 0;
+  }
 }
 body .container .subscriptionForm .links a {
   margin: 10px 0;
   font-size: 0.75em;
   color: #8f8f8f;
   text-decoration: none;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+}
+@media (max-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  body .container .subscriptionForm .links a {
+    margin: 0 0 5px 0;
+  }
 }
 body .container .subscriptionForm .links a:hover {
   color: #45f3ff;
@@ -295,6 +533,16 @@ body .container .subscriptionForm .submitBtn {
   font-weight: bold;
   font-size: 0.85em;
   color: #1c1c1c;
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
+  /* **************************   VERTICAL  ************************** */
+  /* **************************   HORIZONTAL  ************************** */
 }
 body .container .subscriptionForm .submitBtn:hover {
   opacity: 0.9;
@@ -312,5 +560,16 @@ body .container .subscriptionForm .submitBtn:hover {
 @media (max-width: 320px) {
   body .container .subscriptionForm .submitBtn {
     font-size: 0.7em;
+  }
+}
+@media (max-width: 926px) and (max-height: 428px) and (orientation: landscape) {
+  body .container .subscriptionForm .submitBtn {
+    margin-top: 0;
+    padding: 10px 25px;
+  }
+}
+@media (max-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  body .container .subscriptionForm .submitBtn {
+    padding: 8px 25px;
   }
 }/*# sourceMappingURL=main.css.map */
