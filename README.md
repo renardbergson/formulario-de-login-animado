@@ -54,7 +54,7 @@ Confira o video preview do projeto <br>
 https://user-images.githubusercontent.com/97261795/192344380-953a6f69-dd42-46fe-82c3-d1671442b903.mov
 
 ### Link
-  •	[Formulário de Login Animado](https://renardbergson.github.io/formulario-de-login-animado) 
+  •	[Formulário de Login Animado](https://formulario-de-login-animado-rb.netlify.app) 
 
 ### Autor
   •	Renard Bergson 🤓 <br>
