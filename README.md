@@ -58,6 +58,6 @@ https://user-images.githubusercontent.com/97261795/192344380-953a6f69-dd42-46fe-
 
 ### Autor
   •	Renard Bergson 🤓 <br>
-	•	renardrock@gmail.com <br>
+	•	contato@renardb.com <br>
 	•	[LinkedIn](https://www.linkedin.com/in/renardbergson) <br>
 	•	[GitHub](https://www.github.com/renardbergson)
